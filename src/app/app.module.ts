@@ -6,6 +6,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { ListadoNoticiasComponent } from './components/listado-noticias/listado-noticias.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
     SpinnerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
