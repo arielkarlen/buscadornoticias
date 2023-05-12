@@ -24,20 +24,17 @@ export class FormularioComponent {
 
  paises: any[]=[
   {value:'ar',nombre:'Argentina',},
-  {value:'br',nombre:'Brasil',},
-  {value:'fr',nombre:'Francia',},
-  {value:'hu',nombre:'Hungria',},
-  {value:'mx',nombre:'Mexico',},
-  {value:'gb',nombre:'Reino Unido',},
+  {value:'us',nombre:'Internacional',},
+  
 ]
 
 buscarNoticia() {
-  // console.log(this.categoriaSeleccionada);
-  // console.log(this.paisSeleccioando);
+
 
   const PARAMETROS  = {
     categoria: this.categoriaSeleccionada,
-    pais:this.paisSeleccioando
+    pais:this.paisSeleccioando,
+   
   }
   this.parametrosSeleccionados.emit(PARAMETROS)
 }

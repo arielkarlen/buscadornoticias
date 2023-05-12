@@ -1,5 +1,23 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-        <span class="navbar-brand">{{titulo}}</span>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="primaryHeader">
+    <div class="container">
+
+
+        <a class="navbar-brand" href="#">
+            <img [src]="logo" alt="Logo" width="255" height="40" class="d-inline-block align-text-top">
+        </a>
+        <div id="Blue">
+            <h5>Dolar BLUE </h5>
+            <h6><span>Compra: <strong>${{valorDolar.blue.value_buy}}</strong></span> <span>Venta:
+                    ${{valorDolar.blue.value_sell}}</span>
+            </h6>
+
+        </div>
+        <div id="oficial">
+            <h5>Dolar BNA </h5>
+            <h6><span>Compra: ${{valorDolar.oficial.value_buy}}</span> <span>Venta:
+                    ${{valorDolar.oficial.value_sell}}</span>
+            </h6>
+        </div>
+
     </div>
 </nav>

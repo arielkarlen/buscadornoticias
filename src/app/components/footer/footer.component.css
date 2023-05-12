@@ -1,0 +1,11 @@
+#footer {
+    background-color: #000;
+    border-top:3px solid var(--red-color);
+   padding-top: 30px;
+   padding-bottom: 30px;
+   margin-top: 50px;
+}
+
+#footer h6 {
+    color: #fff
+}
