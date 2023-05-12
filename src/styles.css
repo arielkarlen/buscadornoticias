@@ -20,6 +20,10 @@ span {
 .bg-primary{
     background-color: var(--gray-color)!important;
     border-bottom: 1px solid #e3e3e3;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    filter: drop-shadow(0px 6px 6px #dbdbdb);
 }
 
 .bg-primary p{
@@ -55,8 +59,10 @@ span {
     min-height: 300px;
     border:none;
     border-bottom: 1px solid #e3e3e3;
+    transition: 0.3s ease all;
 }
 
 .card:hover {
+    transition: 0.3s ease all;
     filter: drop-shadow(0px 0px 10px #B1B1B1);
 }
