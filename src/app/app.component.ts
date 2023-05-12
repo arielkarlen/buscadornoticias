@@ -9,7 +9,8 @@ import { NoticiasService } from './services/noticias.service';
 
 
 export class AppComponent {
-
+  listaDeNoticias: any[]=[] ;
+  loading = false;
 
   constructor(private _api: NoticiasService) 
   {
@@ -17,8 +18,14 @@ export class AppComponent {
   }
  buscarNoticias(parametro: any) 
  {
- 
+ this.loading=true
+
   this._api.getNoticias(parametro).subscribe(result=>
-    {console.log(result)})
+    {
+    this.listaDeNoticias=result.articles;
+    this.loading=false
+    })
+
+  
  }
 }
