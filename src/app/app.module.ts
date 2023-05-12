@@ -8,6 +8,8 @@ import { ListadoNoticiasComponent } from './components/listado-noticias/listado-
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { UltimasNoticiasComponent } from './components/ultimas-noticias/ultimas-noticias.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import {HttpClientModule} from '@angular/common/http';
     NavbarComponent,
     FormularioComponent,
     ListadoNoticiasComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    UltimasNoticiasComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

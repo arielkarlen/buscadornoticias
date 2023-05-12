@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --gray-color: #fff;
+    --red-color: #C1272D
+}
+
+a {
+    
+    text-decoration: none;
+}
+
+span {
+    margin-right: 20px;
+}
+
+.navbar {
+    text-transform: none!important;
+}
+
+.bg-primary{
+    background-color: var(--gray-color)!important;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.bg-primary p{
+    margin: 0;
+}
+
+.bg-primary h5 {
+    color:var(--red-color)
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+
+.small, small {
+    font-size: 12px;
+}
+
+.list-group-item {
+    border: none;
+    border-bottom: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+}
+
+.btn {
+    width: 100%;
+    padding: 6px!important;
+    
+}
+
+.card {
+    min-height: 300px;
+    border:none;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.card:hover {
+    filter: drop-shadow(0px 0px 10px #B1B1B1);
+}

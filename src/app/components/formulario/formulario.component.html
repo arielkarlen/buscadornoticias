@@ -1,26 +1,24 @@
-<div class="jumbotron mt-5">
-    <h2 class="heading">Filtrar noticias por paises y categorias</h2>
+<form (ngSubmit)=" buscarNoticia()" class="mb-5" id="searchForm">
+
     <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <form (ngSubmit)="buscarNoticia()">
-                <div class="form-group">
-                    <label for="exampleSelect1" class="form-label mt-4">Categoria</label>
-                    <select class="form-select form-select-lg" name="categoria" [(ngModel)]="categoriaSeleccionada">
-                        <option *ngFor="let categoria of categorias" [value]="categoria.value">{{categoria.nombre}}
-                        </option>
+        <div class="form-group col-5">
 
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleSelect2" class="form-label mt-4">Paises</label>
-                    <select class="form-select form-select-lg" name="pais" [(ngModel)]="paisSeleccioando">
-                        <option *ngFor="let pais of paises" [value]="pais.value">{{pais.nombre}}
-                        </option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block btn-lg mt-5">Buscar</button>
-            </form>
+            <select class="form-select form-select-sm" name="pais" [(ngModel)]="paisSeleccioando">
+                <option *ngFor="let pais of paises" [value]="pais.value">{{pais.nombre}}
+                </option>
+            </select>
+        </div>
+        <div class="form-group col-5">
 
+            <select class="form-select form-select-sm" name="categoria" [(ngModel)]="categoriaSeleccionada">
+                <option *ngFor="let categoria of categorias" [value]="categoria.value">{{categoria.nombre}}
+                </option>
+
+            </select>
+        </div>
+
+        <div class="col-2">
+            <button type="submit" class="btn btn-primary btn-sm">Buscar</button>
         </div>
     </div>
-</div>
+</form>
