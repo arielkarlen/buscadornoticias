@@ -14,12 +14,13 @@ export class FormularioComponent {
 
   categorias: any[]=[
     {value:'politics',nombre:'Politica',},
-    {value:'bussines',nombre:'Negocios',},
+    {value:'business',nombre:'Negocios',},
     {value:'entertainment',nombre:'Entretenimiento',},
     {value:'health',nombre:'Salud',},
     {value:'science',nombre:'Ciencia',},
     {value:'sports',nombre:'Deportes',},
     {value:'technology',nombre:'Tecnologia',},
+    {value:'tourism',nombre:'Turismo',},
  ]
 
  paises: any[]=[

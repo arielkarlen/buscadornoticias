@@ -56,10 +56,12 @@ span {
 }
 
 .card {
-    min-height: 300px;
-    border:none;
+  
+    border: none;
     border-bottom: 1px solid #e3e3e3;
     transition: 0.3s ease all;
+    max-height: 380px;
+    overflow: hidden;
 }
 
 .card:hover {

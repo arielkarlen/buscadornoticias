@@ -48,7 +48,7 @@ ngOnInit(): void {
     this.listaDeNoticias=result.results;
     this.loading=false
     })
-    
+    console.log(this.listaDeNoticias)
   
  }
 
@@ -56,7 +56,7 @@ ngOnInit(): void {
   this._apiLast.getUltimasNoticias(codeCountry).subscribe(result=>
     {
     this.ultimasNoticias=result.results;
-    console.log(this.ultimasNoticias)
+    
     })
  }
 
