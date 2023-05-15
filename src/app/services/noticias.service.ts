@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { GlobalComponent } from '../components/global-component/global-component.component';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,10 @@ export class NoticiasService {
 
 
   getNoticias(parametros: any): Observable<any> {
-    const URL = 'https://newsapi.org/v2/top-headlines?country='+parametros.pais+'&category='+parametros.categoria+'&apiKey=292b4800b7e648ff9a5146e529839d14'
+
+   
+    
+    const URL = ''+GlobalComponent.apiUrl+'?apikey='+GlobalComponent.apiKey+'&country='+parametros.pais+'&category='+parametros.categoria+''
     return this.http.get(URL)
   }
 }

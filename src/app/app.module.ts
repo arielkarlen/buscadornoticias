@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { UltimasNoticiasComponent } from './components/ultimas-noticias/ultimas-noticias.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { GlobalComponent } from './components/global-component/global-component.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ListadoNoticiasComponent,
     SpinnerComponent,
     UltimasNoticiasComponent,
-    FooterComponent
+    FooterComponent,
+    GlobalComponent
   ],
   imports: [
     BrowserModule,

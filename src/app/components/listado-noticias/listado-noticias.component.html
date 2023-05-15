@@ -7,7 +7,7 @@
             </div>
             <a [href]="noticia.url" target="_blanck">
 
-                <img [src]='noticia.urlToImage == null ? "assets/noImage.png": noticia.urlToImage' class="card-img-top"
+                <img [src]='noticia.image_url == null ? "assets/noImage.png": noticia.image_url' class="card-img-top"
                     alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{noticia.title}}</h5>
@@ -16,4 +16,8 @@
             </a>
         </div>
     </div>
+</div>
+
+<div *ngIf="listadoNoticias.length==0">
+    <h5>No hay noticias para mostrar</h5>
 </div>

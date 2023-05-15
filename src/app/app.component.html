@@ -9,10 +9,13 @@
       <app-listado-noticias [listadoNoticias]="listaDeNoticias"></app-listado-noticias>
     </div>
     <div class="col-md-4">
-
-      <app-ultimas-noticias [ultimasNoticias]="ultimasNoticias" [title]="titleLastArgentina"></app-ultimas-noticias>
-      <app-ultimas-noticias [ultimasNoticias]="ultimasNoticiasInternacional"
-        [title]="titleLastInternational"></app-ultimas-noticias>
+      <div class="lastNewsContainer">
+        <app-ultimas-noticias [ultimasNoticias]="ultimasNoticias" [title]="titleLastArgentina"></app-ultimas-noticias>
+      </div>
+      <div class="lastNewsContainer">
+        <app-ultimas-noticias [ultimasNoticias]="ultimasNoticiasInternacional"
+          [title]="titleLastInternational"></app-ultimas-noticias>
+      </div>
     </div>
   </div>
 </div>

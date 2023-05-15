@@ -28,7 +28,7 @@ export class AppComponent implements OnInit{
 
 ngOnInit(): void {
   const parametrosIniciales  = {
-    categoria: "general",
+    categoria: "politics",
     pais:"ar"
   }
   
@@ -45,25 +45,25 @@ ngOnInit(): void {
 
   this._api.getNoticias(parametro).subscribe(result=>
     {
-    this.listaDeNoticias=result.articles;
+    this.listaDeNoticias=result.results;
     this.loading=false
     })
-    
+    console.log(this.listaDeNoticias)
   
  }
 
  listarUltimasNoticias(codeCountry:any) {
   this._apiLast.getUltimasNoticias(codeCountry).subscribe(result=>
     {
-    this.ultimasNoticias=result.articles;
-  
+    this.ultimasNoticias=result.results;
+    
     })
  }
 
  listarUltimasNoticiasInternacionals(codeCountry:any) {
   this._apiLast.getUltimasNoticias(codeCountry).subscribe(result=>
     {
-    this.ultimasNoticiasInternacional=result.articles;
+    this.ultimasNoticiasInternacional=result.results;
   
     })
  }
