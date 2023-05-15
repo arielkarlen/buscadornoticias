@@ -13,7 +13,7 @@ noticiasQty:number = 3;
 
 
   getUltimasNoticias(codeCountry:any): Observable<any> {
-    const URL = 'https://newsapi.org/v2/top-headlines?country='+codeCountry+'&pageSize='+this.noticiasQty+'&apiKey=292b4800b7e648ff9a5146e529839d14'
+    const URL = 'https://newsdata.io/api/1/news?apikey=pub_220571b0b026b324b46019e83fd4ede10184f&country='+codeCountry+''
     return this.http.get(URL)
   }
 }

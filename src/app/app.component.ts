@@ -55,15 +55,15 @@ ngOnInit(): void {
  listarUltimasNoticias(codeCountry:any) {
   this._apiLast.getUltimasNoticias(codeCountry).subscribe(result=>
     {
-    this.ultimasNoticias=result.articles;
-  
+    this.ultimasNoticias=result.results;
+    console.log(this.ultimasNoticias)
     })
  }
 
  listarUltimasNoticiasInternacionals(codeCountry:any) {
   this._apiLast.getUltimasNoticias(codeCountry).subscribe(result=>
     {
-    this.ultimasNoticiasInternacional=result.articles;
+    this.ultimasNoticiasInternacional=result.results;
   
     })
  }

@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class UltimasNoticiasComponent {
   @Input() title:any
   @Input() ultimasNoticias: any;
+  
 }
