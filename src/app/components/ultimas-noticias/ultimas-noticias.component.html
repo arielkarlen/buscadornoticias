@@ -1,7 +1,7 @@
 <h4>{{title}} - Últimas noticias </h4>
 
 <div class="list-group lastNews" *ngFor="let ultimaNoticia of ultimasNoticias">
-    <a [href]="ultimaNoticia.url" class="list-group-item list-group-item-action" target="_blank">
+    <a [href]="ultimaNoticia.link" class="list-group-item list-group-item-action" target="_blank">
         <small class="text-body-secondary">{{ultimaNoticia.author}}</small>
         <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">{{ultimaNoticia.title}}</h5>
